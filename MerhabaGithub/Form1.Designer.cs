@@ -70,13 +70,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.RosyBrown;
+            BackColor = Color.Yellow;
             ClientSize = new Size(553, 290);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
