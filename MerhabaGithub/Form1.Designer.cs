@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,6 +43,7 @@
             label1.Size = new Size(372, 65);
             label1.TabIndex = 0;
             label1.Text = "Merhaba Github";
+            label1.Click += label1_Click;
             // 
             // pictureBox1
             // 
@@ -53,12 +55,24 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 36F);
+            label2.Location = new Point(103, 217);
+            label2.Name = "label2";
+            label2.Size = new Size(354, 65);
+            label2.TabIndex = 2;
+            label2.Text = "Mustafa KURAL";
+            label2.Click += label2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.RosyBrown;
-            ClientSize = new Size(553, 271);
+            ClientSize = new Size(553, 290);
+            Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Name = "Form1";
@@ -72,5 +86,6 @@
 
         private Label label1;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }
